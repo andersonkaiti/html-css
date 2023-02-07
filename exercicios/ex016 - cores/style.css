@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body{
+    background-image: linear-gradient(to right, #E2EBF0, #CFD9DF);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #858b8fa9;
+    /* 1º parâmetro: quanto essa sombra vai andar para o lado.
+    
+    2º parâmetro: quanto ela vai andar pra baixo.
+    
+    3º parâmetro: quanto ela vai espalhar.
+    
+    4º parâmetro: cor e transparência*/
+    width: 600px;
+    padding: 10px;
+    margin: auto; /* Ele automaticamente centraliza a tag independentemente do tamanho da tela. */
+}
+
+h1{
+    color: #F27A1A;
+    text-align: center;
+    text-shadow: 1px 1px 2px #c06215;
+}
+
+h2{
+    color: #668E7F;
+}
+
+p{
+    text-align: justify;
+}

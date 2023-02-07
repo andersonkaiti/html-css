@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /* Configurações globais das CSS. */
+            height: 100%; /* Para o degradê do "to top" e "to bottom" não ficar fragmentado em várias partes, utiliza-se essa declaração. */
+        }
+        body{ /* O gradiente no navegador é considerado como se fosse uma imagem. */
+            background-image: linear-gradient(to right, #8218FF, #DE01DA, #FF2870,#FF851A, #FFCD01);
+            background-attachment: fixed; /* Para que o degradê não "role", vá para baixo ou para cima. */
+        } /* to right ou 90deg (graus). */
+        /* radial-gradient(circle).  */
+        /* Ainda é possível personalizar o tamanho que a cor ocupa na tela usando 90%, por exemplo. */
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            margin: 0;
+        }
+        h2{
+            margin: 0px;
+        }
+        .tudo{
+            display: flex;
+            justify-content: space-between;
+        }
+        .primeira-parte{
+            padding: 10px;
+            border: solid 1px;
+        }
+        .segunda-parte{
+            padding: 10px;
+            border: solid 1px;
+        }
+        .terceira-parte{
+            padding: 10px;
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <hr>
+    <div class="tudo">
+        <div class="primeira-parte">
+            <h2>Listas Ordenadas</h2>  <!-- 1, A, a, I e i. -->
+            <ol type="1"> <!-- <ol>: "ordered list". O parâmetro type indica o tipo de marcador da lista: numérica, por exemplo, e start indica a partir de qual número a lista começa, sempre escrevendo com símbolos decimais. -->
+                <li>Acordar;</li> <!-- <li>: "list icon". -->
+                <li>Ligar para o João;</li> <!-- o /li é opcional-->
+                <li>Tomar café;</li>
+                <li>Escovar os dentes.</li>
+                <li>Ir para a faculdade;</li>
+                <li>Almoçar;</li>
+                <li>Ir para o trabalho;</li>
+                <li>Voltar para casa;</li>
+                <li>Jantar;</li>
+                <li>Dormir.</li>
+            </ol>
+            <h2>Listas não ordenadas</h2> <!-- circle, disc e square. -->
+            <ul type="disc"> <!-- <ul>: "unordenet list". disc (padrão): bolinha fechada; circle: círculo aberto; square: quadrado. -->
+                <li>Pão;</li>
+                <li>Leite;</li>
+                <li>Tomate;</li>
+                <li>Alface;</li>
+                <li>Manteiga;</li>
+                <li>Arroz;</li>
+                <li>Feijão.</li>
+            </ul>
+        </div>
+        <div class="segunda-parte">
+            <h2>Minhas linguagens favoritas</h2>
+            <ol>
+                <li>Antigas</li>
+                <ol type="a"> <!-- aninhamento: uma coisa dentro da outra como se fosse um ninho. -->
+                    <li>Clipper;</li>
+                    <li>Visual Basic;</li>
+                    <li>Fortran;</li>
+                    <li>Delphi.</li>
+                </ol>
+                <li>Novas</li>
+                <ol type="a" start="5">
+                    <li>PHP;</li>
+                    <li>Python;</li>
+                    <li>JavaScript;</li>
+                    <li>Kotlin.</li>
+                </ol>
+            </ol>
+            <h2>Meus jogos favoritos</h2>
+            <ol>
+                <li>NES</li>
+                <ul type="square">
+                    <li>Mario Bros;</li>
+                    <ul type="circle">
+                        <li>Mario Bros 3;</li>
+                        <li>Mario: Lost Levels.</li>
+                    </ul>
+                    <li>Ninja Gaiden.</li>
+                </ul>
+                <li>SNES</li>
+                <ul type="square">
+                    <li>Mario;</li>
+                    <li>Donkey Kong.</li>
+                </ul>
+                <li>PlayStation</li>
+                <ul type="square">
+                    <li>Final Fantasy;</li>
+                    <li>Castlevania.</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="terceira-parte">
+            <h2>Listas de Definições</h2>
+            <dl> <!-- <dl>: "definition list". -->
+                <dt>HTML</dt> <!-- <dt>: "definition term". -->
+                <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>  <!-- <dd>: "definition description". -->
+                <dt>CSS</dt>
+                <dd>Linguagem de marcação para a criação do design de um site.</dd>
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+            </dl>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

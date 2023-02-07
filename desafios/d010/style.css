@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+body{
+    margin: 0px;
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #3DDC83, #1A5C38);
+    text-align: center;
+    color: white;
+}
+
+main{
+    width: 900px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    color: #1A5C38;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+}
+
+h1#titulo-principal{
+    margin: 0px;
+    padding: 20px;
+    font-family: 'Bebas', Helvetica, sans-serif;
+    font-size: 3.8em;
+}
+
+h2#sub-titulo-principal{
+    font-weight: normal;
+}
+
+h1#titulo-conteudo{
+    margin: 0px;
+}
+
+.titulos{
+    font-family: 'Idroid';
+    text-align: left;
+    font-size: 2em;
+}
+
+nav#links-nav{
+    text-align: left;
+}
+
+nav{
+    padding: 10px;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+p{
+    text-indent: 40px;
+    font-size: 1.2em;
+    color: black;
+    text-align: justify;
+}
+
+.links{
+    color: #1A5C38;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #1A5C38;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+footer > p{
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+section#video{
+    background-color: #1A5C38;
+    padding: 20px 30px;
+}
+
+section#quer-aprender-mais{
+    margin-top: 20px;
+    background-color: #C5EBD6;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#quer-aprender-mais-titulo{
+    background-color: #2FA866;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    margin: 0px;
+}
+
+main img{
+    width: 100%;
+}

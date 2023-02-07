@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+            cm, mm, in, px, pt, pc.
+            Existem telas de tamanhos diferentes. A apresentação do site na TV e no celular serão diferentes.
+            
+            Medidas Relativas:
+            em (relativa ao tamanho atual da fonte; ao M maiúsculo de uma letra), ex (relativo à altura x de uma fonte; tamanho da altura x de uma fonte), rem (relativo ao root, a fonte que está configurada no body), vw (viewport-width; porcentagem da largura da viewport), vh (viewport-height; a altura da viewport), %.
+            
+            16px geralmente = 1em.
+            Ele é sempre relativo ao tamanho natural da fonte.
+            
+            Use px e em.
+
+            */
+            font-size: 1.5em; /* 1 polegada: 2,54cm. */
+            /* 16px é o tamanho normal da fonte. */
+
+            font-weight: lighter;
+            font-style: italic;
+
+            /* font-weight para negrito, o font-style para itálico e o text-decoration: underline para sublinhado. */
+            
+            /* O 400 é o normal. */
+            /* lighter, normal, bold e bolder. */
+
+        } /* Courier New, por exemplo, são duas palavras, então eu tenho que colocar entre aspas. */
+        /* Em "Arial, Helvetica, sans-serif", o site tentará usar a Arial. Se ele não encontrá-la, o site tenta utilizar a Helvetica, e se ele não encontrar a Helvetica, tentará a sans-serif, uma fonte genérica, ou seja, qualquer fonte que seja sans-serif. Isso se chama "safe combination". */
+        /* Fontes genéricas: sans-serif, serif e monospace. */
+        
+        h1{
+            /* shorthand font
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+            
+            - font-style -> font-weight -> font-size -> font-family. */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ullam, harum veniam temporibus consequatur et enim, cumque doloremque hic totam reiciendis debitis deleniti, eum vel unde rerum beatae perferendis iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate in reprehenderit earum optio enim possimus consequuntur. Id totam voluptatibus sapiente impedit? Recusandae consequatur nemo perferendis vitae quasi ab delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, magni. Voluptatem, id! Laboriosam soluta alias nostrum, deserunt neque fugiat eius unde minus eveniet, rem expedita cupiditate odit explicabo autem repellendus?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad aperiam temporibus laudantium nihil, laborum, quia atque nesciunt dolorum ex accusamus, quibusdam magnam earum ut. Consectetur quaerat distinctio velit necessitatibus quos!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit ipsa incidunt officiis nulla nihil esse laboriosam quos nobis delectus, aut corrupti quam saepe architecto eos ullam ut quae a.</p>
+</body>
+</html>
